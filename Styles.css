@@ -1,0 +1,83 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15%);
+    grid-auto-rows: auto;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav_btn {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+hr {
+    color: black;
+    background-color: black;
+}
+
+.nav_btn:hover {
+    background-color:rgba(255, 255, 255, 25);
+    color: black;
+    border: 0;
+    font-weight: 100;
+   font-size: 20px;
+}
+
+.post {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 2%;
+    margin: 0;
+    padding: 5px;
+
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.datetimenow {
+    font-size: small;
+}
+
+body {
+    text-align: center;
+}
+
+#nav_rfsh 
+{
+   width: 30px;
+   height: 30px;
+   
+}
+
+.footer {
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+
+/* Tablets */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: auto;
+    }
+}
