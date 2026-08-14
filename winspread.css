@@ -7,14 +7,12 @@ body
     font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-.back
+.btnback 
 {
+    border: 0;
     background-color: transparent;
-    background-image: url(back32.png);
-
+    color: white;
+    font-size: 16px;
 }
 
-.back:hover 
-{
-    background-color: rgba(0, 0, 0, 50);
-}
+.btnback:hover { background-color: transparent; }
